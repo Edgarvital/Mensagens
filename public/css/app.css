@@ -4566,9 +4566,10 @@ input[type=button].btn-block {
 }
 
 .paragrafo{
-  font-size: 20px;
-  color: #c0bbc8;
+  font-size: 22px;
+  color: white;
   max-width: 370px;
+  text-align: left;
 }
 
 .titulo{
@@ -4583,6 +4584,21 @@ input[type=button].btn-block {
   border-style: solid;
   border-color: white;
   border-radius: 25px;
+}
+
+.crop2 {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+  border-radius: 25px;
+}
+
+.crop2 img {
+  width: 500px;
+  height: 500px;
+  margin: -15px 0 0 -100px;
 }
 
 .crop img {

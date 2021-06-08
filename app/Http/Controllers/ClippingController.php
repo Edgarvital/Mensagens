@@ -30,8 +30,11 @@ class ClippingController extends Controller
             'link.*'           => ['required_with:titulo.*'],
         ]);
 
-        $dataInicio = $request->dataInicio . " 00:00:00";
-        $dataFinal = $request->dataFinal . " 23:59:59";
+        $dataI = str_replace ('/', '-', explode(" ",  $request->dataInicio)[0]);
+        $dataF = str_replace ('/', '-', explode(" ",  $request->dataFinal)[0]);
+
+        $dataInicio = $request->dataI . " 00:00:00";
+        $dataFinal = $request->dataF . " 23:59:59";
 
 
         $noticias = $this->gerarNoticias($dataInicio, $dataFinal);
@@ -119,8 +122,6 @@ class ClippingController extends Controller
     }
 
     public function gerarComunicados($dataInicio, $dataFinal){
-        $dataInicio = str_replace ('/', '-', explode(" ",  $dataInicio)[0]);
-        $dataFinal = str_replace ('/', '-', explode(" ",  $dataFinal)[0]); 
         $dataInicio = new DateTime($dataInicio);
         $dataFinal = new DateTime($dataFinal);
 
@@ -184,8 +185,6 @@ class ClippingController extends Controller
     }
 
     public function gerarAgenda($dataInicio, $dataFinal){
-        $dataInicio = str_replace ('/', '-', explode(" ",  $dataInicio)[0]);
-        $dataFinal = str_replace ('/', '-', explode(" ",  $dataFinal)[0]); 
         $dataInicio = new DateTime($dataInicio);
         $dataFinal = new DateTime($dataFinal);
 
@@ -243,8 +242,6 @@ class ClippingController extends Controller
     }
 
     public function gerarEditais($dataInicio, $dataFinal){
-        $dataInicio = str_replace ('/', '-', explode(" ",  $dataInicio)[0]);
-        $dataFinal = str_replace ('/', '-', explode(" ",  $dataFinal)[0]); 
         $dataInicio = new DateTime($dataInicio);
         $dataFinal = new DateTime($dataFinal);
 

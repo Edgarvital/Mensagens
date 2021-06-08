@@ -23,7 +23,7 @@
                     <img src="{{asset('imagens/letreiro.jpg')}}">
                 </div>
             </div>
-            <div class="col-sm" align="justify">
+            <div class="col-sm">
                 <h2 class="titulo">Geração de <b class="secom">clipping</b></h2>
                 <p class="paragrafo" style="text-align: justify">Sistema para geração automatizada de
                     clipping de notícias a partir do portal
@@ -54,6 +54,24 @@
                             </button>
                         </center>
                     </form>
+                </div>
+            </div>
+        </div>
+        <div class="row py-lg-5">
+            <div class="col-sm" align="center">
+                <h2 class="titulo">Geração de <b class="secom">cartões de aniversario</b></h2>
+                <p class="paragrafo">Lorem Ipsum é simplesmente uma
+                    simulação de texto da indústria
+                    tipográfica e de impressos, e vem
+                    sendo utilizado desde o século XVI,
+                    quando um impressor desconhecido
+                    pegou uma bandeja de tipos e os
+                    embaralhou para fazer um livro de
+                    modelos de tipos.</p>
+            </div>
+            <div class="col-sm" style="left: 15px">
+                <div class="crop2">
+                    <img src="{{asset('imagens/balao.jpg')}}">
                 </div>
             </div>
         </div>
